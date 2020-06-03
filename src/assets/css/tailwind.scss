@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #0fccd8;
+  --color-secondary: #363b42;
+  --color-neutral: #f8f8f8;
+  --color-graylight: #656d78;
+  --color-graydark: #3e3e3d;
+  --color-green: #00a651;
+  --color-greenlight: #12d66f;
+  --color-orange: #d67d12;
+  --color-blue: #128bd6;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  background-color: green;
+}
