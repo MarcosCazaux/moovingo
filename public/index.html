@@ -1,17 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>img/icons/favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="Description" content="Moovingo Project" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Styles -->
+    <style>
+      @-webkit-keyframes heartBeat {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        14% {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+        28% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        42% {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+        70% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      @keyframes heartBeat {
+        0% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        14% {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+        28% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+        42% {
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+        }
+        70% {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+        }
+      }
+      .loading {
+        width: 4rem;
+        margin: calc(50vh - 4rem) 0 0 calc(50vw - 2rem);
+        -webkit-animation-name: heartBeat;
+        animation-name: heartBeat;
+        -webkit-animation-duration: 1.3s;
+        animation-duration: 1.3s;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+    </style>
   </head>
+
   <body>
+    <div id="moovingo_app">
+      <div class="loading">
+        <img
+          src="<%= BASE_URL %>img/icons/logo.svg"
+          alt="Loading..."
+          title="Loading..."
+        />
+      </div>
+    </div>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <div
+        style="font-family: sans-serif; text-align: center; opacity: 0.5; margin-top: 2rem;"
+      >
+        <strong
+          >You need to enable JavaScript to run this app. Enable javascript in
+          your browser preferences.</strong
+        >
+      </div>
     </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>

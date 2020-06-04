@@ -8,14 +8,11 @@
   --color-greenlight: #12d66f;
   --color-orange: #d67d12;
   --color-blue: #128bd6;
+  --color-white: #fff;
 }
-
+// eslint-disable-next-line
 @tailwind base;
-
+// eslint-disable-next-line
 @tailwind components;
-
+// eslint-disable-next-line
 @tailwind utilities;
-
-body {
-  background-color: green;
-}
