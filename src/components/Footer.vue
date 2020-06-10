@@ -1,6 +1,6 @@
 <template>
   <footer class="pt-10 pb-10 bg-graydark">
-    <div class="container pr-5 pl-5 sm:pr-16 sm:pl-16">
+    <div class="container mx-auto pr-5 pl-5 lg:pr-16 lg:pl-16">
       <FooterItem title="Designed for you by Moovingo">
         <Logo />
       </FooterItem>

@@ -1,0 +1,9 @@
+.slider {
+  display: flex;
+  height: 30rem;
+  overflow: auto;
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+}

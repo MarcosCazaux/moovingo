@@ -1,7 +1,7 @@
 <template>
   <div id="moovingo_app">
     <Header />
-    <main class="pt-10">
+    <main class="pt-8 lg:pt-16">
       <router-view />
     </main>
     <Footer />
