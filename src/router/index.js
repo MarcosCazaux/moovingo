@@ -1,44 +1,41 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Home from "../views/HomeView.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "HomeView",
     component: Home
   },
   {
-    path: "/soon",
-    name: "Soon",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "soon" */ "../views/Soon.vue")
+    path: "/list",
+    name: "ListView",
+    component: () => import("../views/ListView.vue")
   },
   {
-    path: "/search",
-    name: "Search",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "search" */ "../views/Search.vue")
+    path: "/list/:id",
+    name: "DetailView",
+    props: true,
+    component: () => import("../views/DetailView.vue")
   },
   {
-    path: "/detail",
-    name: "Detail",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "detail" */ "../views/Detail.vue")
+    path: "*",
+    name: "SoonView",
+    component: () => import("../views/SoonView.vue")
   }
 ];
 
 const router = new VueRouter({
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  },
   mode: "history",
   base: process.env.BASE_URL,
   routes

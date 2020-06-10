@@ -1,19 +1,19 @@
 <template>
   <section>
     <div class="container pr-5 pl-5 sm:pr-16 sm:pl-16 mb-10">
-      <HelloWorld msg="Welcome to Your Vue.js moovingo_app" />
+      <Home msg="Welcome to Your Vue.js moovingo_app" />
     </div>
     <div class="picture"></div>
   </section>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
+import Home from "@/components/Home.vue";
 
 export default {
-  name: "Home",
+  name: "HomeView",
   components: {
-    HelloWorld
+    Home
   }
 };
 </script>

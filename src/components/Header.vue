@@ -1,6 +1,8 @@
 <template>
   <header class="sticky top-0 bg-white">
-    <nav class="container flex justify-between items-center text-sm p-5 sm:pr-16 sm:pl-16">
+    <nav
+      class="container flex justify-between items-center text-sm p-5 sm:pr-16 sm:pl-16"
+    >
       <div class="text-gray-700 text-center">
         <div class="flex justify-end">
           <div class="text-gray-700 text-center">
@@ -14,7 +16,9 @@
             <router-link to="/soon">
               <button
                 class="bg-primary hover:bg-blue text-white py-2 px-4 rounded"
-              >Book Free Valuation</button>
+              >
+                Book Free Valuation
+              </button>
             </router-link>
           </div>
         </div>
@@ -22,33 +26,47 @@
       <div class="text-gray-700 text-center">
         <div class="flex justify-end items-center hidden xl:flex">
           <div class="text-gray-700 text-center ml-2">
-            <router-link to="/search">
-              <button class="bg-white hover:text-blue py-2 px-4 rounded">Browse Listings</button>
+            <router-link to="/list">
+              <button class="bg-white hover:text-blue py-2 px-4 rounded">
+                Browse Listings
+              </button>
             </router-link>
           </div>
           <div class="text-gray-700 text-center ml-2">
             <router-link to="/soon">
-              <button class="bg-white hover:text-blue py-2 px-4 rounded">Our Fees</button>
+              <button class="bg-white hover:text-blue py-2 px-4 rounded">
+                Our Fees
+              </button>
             </router-link>
           </div>
           <div class="text-gray-700 text-center ml-2">
             <router-link to="/soon">
-              <button class="bg-white hover:text-blue py-2 px-4 rounded">Selling</button>
+              <button class="bg-white hover:text-blue py-2 px-4 rounded">
+                Selling
+              </button>
             </router-link>
           </div>
           <div class="text-gray-700 text-center ml-2">
             <router-link to="/soon">
-              <button class="bg-white hover:text-blue py-2 px-4 rounded">More</button>
+              <button class="bg-white hover:text-blue py-2 px-4 rounded">
+                More
+              </button>
             </router-link>
           </div>
           <div class="text-gray-700 text-center ml-2">
             <router-link to="/soon">
-              <button class="bg-white hover:text-blue py-2 px-4 rounded">01 5169999</button>
+              <button class="bg-white hover:text-blue py-2 px-4 rounded">
+                01 5169999
+              </button>
             </router-link>
           </div>
           <div class="text-gray-700 text-center ml-2">
             <router-link to="/soon">
-              <button class="bg-primary hover:bg-blue text-white py-2 px-4 rounded">Login</button>
+              <button
+                class="bg-primary hover:bg-blue text-white py-2 px-4 rounded"
+              >
+                Login
+              </button>
             </router-link>
           </div>
         </div>
