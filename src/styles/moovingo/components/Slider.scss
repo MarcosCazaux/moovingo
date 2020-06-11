@@ -6,4 +6,22 @@
     object-fit: cover;
     height: 100%;
   }
+  &::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.25rem;
+    border: 0.125rem solid var(--color-white);
+    background-color: var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
 }

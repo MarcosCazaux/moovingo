@@ -8,8 +8,11 @@ by Marcos Cazaux for SQUARE 1
 
 ```
 VueJS
-Tailwindcss
+Tailwindcss (base + customization)
 SASS
+Mobile First Design
+Responsive Design
+PWA
 ```
 
 ## Project setup
